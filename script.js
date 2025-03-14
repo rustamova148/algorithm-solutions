@@ -23,19 +23,19 @@
 // }
 // console.log(commonElements([1,2,3,4],[3,4,5,6]));
 //** 2 arrayi birlesdirib sonra elementlerini toplamaq
-// function topla(arr1,arr2){
+// function sum(arr1,arr2){
 //     let combined = [...arr1,...arr2];
 //     let summed = combined.reduce((a, b) => a + b);
 //     return summed;
 // }
-// console.log(topla([1,2,3,4],[3,4,5,6]));
+// console.log(sum([1,2,3,4],[3,4,5,6]));
 //** Faktorial tapmaq
-// function factorialTap(n){
+// function findFactorial(n){
 //   let result = 1;
 //   for(let i = 1; i<=n; i++){
 //     result *= i;
 //   }
 //   return result;
 // }
-// console.log(factorialTap(5));
+// console.log(findFactorial(5));
 
