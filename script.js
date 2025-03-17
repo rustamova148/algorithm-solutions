@@ -38,4 +38,35 @@
 //   return result;
 // }
 // console.log(findFactorial(5));
+//* funksiya str parametri olaraq cumle qebul edir ve biz o cumlede length deyeri en uzun olan sozu 
+//* ve onun length deyerini return etmeliyik.
+// function findLongestWordLength(str) {
+//     let word = str.split(' ');
+//     let longWordLength = 0;
+//     let longWord = '';
+//     word.forEach(item => {
+//         if(item.length > longWordLength){
+//             longWordLength = item.length;
+//             longWord = item;
+//         }
+//     })
+//     return longWordLength + ', ' + longWord;
+// }
+// console.log(findLongestWordLength("menim adim nezrindir"));
+//* kontrol etmeliyik ki eger soz samit ile baslayirsa ve ya samit ile davam edirse o samitleri 
+//* kesib hemin sozun sonuna birlesdiririk ve "ay" sozunu elave edirik eger sait ile baslayirsa 
+//* sadece sozun sonuna "way" artirir return edirik
 
+// function convertWordBasedOnVowel(str){
+//     let arr = str.toLowerCase().split('');
+//     if(["a","e","i","o","u"].includes(arr[0])){
+//         return str.toLowerCase() + "way";
+//     }else{
+//         let firstVowelIndex = arr.findIndex(item => ["a","e","i","o","u"].includes(item));
+//         let prefix = str.toLowerCase().slice(0,firstVowelIndex);
+//         let suffix = str.toLowerCase().slice(firstVowelIndex);
+//         return suffix + prefix + "ay";
+//     }
+// }
+
+// console.log(convertWordBasedOnVowel("california"));
