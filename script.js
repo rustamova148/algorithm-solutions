@@ -70,3 +70,51 @@
 // }
 
 // console.log(convertWordBasedOnVowel("california"));
+//& leetcode
+// let romanMap = {I:1, V:5, X:10, L:50, C:100, D:500, M:1000};
+// let s = 'III';
+// let s_arr = s.split('');
+// console.log(s_arr);
+//& ardi yazilmali
+// let birinci = 'menim adim Nezrindir.';
+// let ikinci = 'Nezrindir';
+// let ucuncu = 'nigardir';
+// if(ikinci.charAt(0) === ikinci.charAt(0).toUpperCase()){
+//     let ifUpper = ucuncu.charAt(0).toUpperCase() + ucuncu.slice(1).toLowerCase();
+//     console.log(birinci.replace(`${ikinci}`,`${ifUpper}`));
+// }else{
+//     console.log(birinci.replace(`${ikinci}`,`${ucuncu}`));
+// }
+//* 2ci parametrde verilen sozu cumle icerisinde tapib 3cu parametrde verilen soz ile evez etmeli
+// function myReplace(str, before, after){
+//     if(before.charAt(0) === before.charAt(0).toUpperCase()){
+//     let ifUpper = after.charAt(0).toUpperCase() + after.slice(1).toLowerCase();
+//         return str.replace(before, ifUpper);
+//     }else{
+//         return str.replace(before, after)
+//     }
+// }
+
+// console.log(myReplace("Let us go to the store", "store", "mall"));
+// console.log(myReplace("His name is Tom", "Tom", "john"));
+//* G herfidise yanina C gelecek, C herfidide yanina G gelecek , A herfidise yanina T , T herfidise yanina A gelecek.
+// function pairElement(str){
+//     let after = str.split("");
+//     let mapped = after.map(el => [el] );
+//     for(let i = 0; i < mapped.length; i++){
+//         if(mapped[i][0] === 'G'){
+//             mapped[i].push('C');
+//         }else if(mapped[i][0] === 'C'){
+//             mapped[i].push('G');
+//         }else if(mapped[i][0] === 'A'){
+//             mapped[i].push('T');
+//         }else{
+//             mapped[i].push('A');
+//         }
+//     }
+//     return mapped;
+// }
+
+// console.log(pairElement("GCG"));
+// console.log(pairElement("ATCGA"));
+// console.log(pairElement("CTCTA"));
