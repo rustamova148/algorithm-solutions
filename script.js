@@ -70,21 +70,7 @@
 // }
 
 // console.log(convertWordBasedOnVowel("california"));
-//& leetcode
-// let romanMap = {I:1, V:5, X:10, L:50, C:100, D:500, M:1000};
-// let s = 'III';
-// let s_arr = s.split('');
-// console.log(s_arr);
-//& ardi yazilmali
-// let birinci = 'menim adim Nezrindir.';
-// let ikinci = 'Nezrindir';
-// let ucuncu = 'nigardir';
-// if(ikinci.charAt(0) === ikinci.charAt(0).toUpperCase()){
-//     let ifUpper = ucuncu.charAt(0).toUpperCase() + ucuncu.slice(1).toLowerCase();
-//     console.log(birinci.replace(`${ikinci}`,`${ifUpper}`));
-// }else{
-//     console.log(birinci.replace(`${ikinci}`,`${ucuncu}`));
-// }
+
 //* 2ci parametrde verilen sozu cumle icerisinde tapib 3cu parametrde verilen soz ile evez etmeli
 // function myReplace(str, before, after){
 //     if(before.charAt(0) === before.charAt(0).toUpperCase()){
