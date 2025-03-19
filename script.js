@@ -11,10 +11,6 @@
 
 //* Sozlerin palindrom oldugunu yoxlama funksiyasi
 
-// let word = 'nezrin';
-// let reversed = word.split('').reverse().join('');
-// console.log(reversed);
-
 // function isPalindrome(word){
 //     return word === word.split('').reverse().join('');
 // }
