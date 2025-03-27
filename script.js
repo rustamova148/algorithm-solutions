@@ -115,3 +115,49 @@
 // console.log(pairElement("GCG"));
 // console.log(pairElement("ATCGA"));
 // console.log(pairElement("CTCTA"));
+
+//& Leetcode - Change roman numeral to integer
+
+// let romanMap = {I:1, V:5, X:10, L:50, C:100, D:500, M:1000};
+// let s = 'MCXL';
+// let s_arr = s.split('');
+// let integer = 0;
+
+// for(let i = 0; i < s_arr.length - 1; i++){
+//     if(romanMap[s_arr[i]] < romanMap[s_arr[i+1]]){
+//         integer -= romanMap[s_arr[i]];
+//     }else{
+//         integer += romanMap[s_arr[i]];
+//     }
+// }
+// integer += romanMap[s_arr[s_arr.length - 1 ]];
+
+// console.log(integer);
+
+//& Leetcode - Common prefix
+
+// function longestCommonPrefix(strs){
+//     let prefix = strs[0]; //flower
+//     while(!strs.every(str => str.startsWith(prefix))){
+//     prefix = prefix.slice(0,-1);
+//     if(!prefix) return "";
+//     }
+//     return prefix;
+// }
+// console.log(longestCommonPrefix(["flower","flow","flight"]));
+
+//* eger [] = true, [{()}] = true, [} = false.
+
+// let isValid = function(s) {
+//     let stack = [];
+//     let map = {"}": "{", "]": "[", ")": "("};
+//     for(let char of s){
+//         if(!map[char]){
+//             stack.push(char);
+//         }else{
+//             if(stack.pop() !== map[char]) return false;
+//         }
+//     }
+//     return stack.length === 0;
+// };
+// console.log(isValid("()"));
